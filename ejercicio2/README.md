@@ -31,20 +31,20 @@ Si notan muy lenta la animación, pueden eliminar un delay en la línea 270-274,
 
 ## Estructura  
 
-* **[app.s](./ejercicio2/app.s)**: Este archivo contiene la aplicación principal que utiliza las funciones gráficas definidas en otros archivos para renderizar gráficos en pantalla. Todo el hardware ya está inicializado anteriormente.
-* **[background.s](./ejercicio2/background.s)**: Contiene los datos y la lógica para dibujar el fondo de la pantalla.
-* **[castle.s](./ejercicio2/castle.s)**: Contiene los datos y la lógica para dibujar un castillo, así como la animación asociada.
-* **[circle.s](./ejercicio2/circle.s)**: Implementa la lógica para dibujar círculos en el buffer gráfico.
-* **[graphics.s](./ejercicio2/graphics.s)**: Contiene funciones gráficas generales y utilidades para la manipulación del buffer gráfico.
-* **[knight.s](./ejercicio2/knight.s)**: Contiene los datos y la lógica para dibujar un caballero.
-* **[line.s](./ejercicio2/line.s)**: Implementa la lógica para dibujar líneas horizontales en el buffer gráfico.
-* **[macros.s](./ejercicio2/macros.s)**: Define macros utilizadas en los archivos de ensamblador para simplificar el código y mejorar la legibilidad.
-* **[rectangle.s](./ejercicio2/rectangle.s)**: Implementa la lógica para dibujar rectángulos en el buffer gráfico.
-* **[start.s](./ejercicio2/start.s)**: Este archivo realiza la inicialización del hardware.
-* **[triangle.s](./ejercicio2/triangle.s)**: Implementa la lógica para dibujar triángulos en el buffer gráfico.
-* **[utils.s](./ejercicio2/utils.s)**: Contiene funciones utilitarias esenciales para el dibujado de píxeles y el cálculo de sus direcciones de memoria.
-* **[Makefile](./ejercicio2/Makefile)**: Archivo que describe cómo construir el software (qué ensamblador utilizar, qué salida generar, etc).
-* **[memmap](./ejercicio2/memmap)**: Este archivo contiene la descripción de la distribución de la memoria del programa y dónde colocar cada sección.
+* **[app.s](app.s)**: Este archivo contiene la aplicación principal que utiliza las funciones gráficas definidas en otros archivos para renderizar gráficos en pantalla. Todo el hardware ya está inicializado anteriormente.
+* **[background.s](background.s)**: Contiene los datos y la lógica para dibujar el fondo de la pantalla.
+* **[castle.s](castle.s)**: Contiene los datos y la lógica para dibujar un castillo, así como la animación asociada.
+* **[circle.s](circle.s)**: Implementa la lógica para dibujar círculos en el buffer gráfico.
+* **[graphics.s](graphics.s)**: Contiene funciones gráficas generales y utilidades para la manipulación del buffer gráfico.
+* **[knight.s](knight.s)**: Contiene los datos y la lógica para dibujar un caballero.
+* **[line.s](line.s)**: Implementa la lógica para dibujar líneas horizontales en el buffer gráfico.
+* **[macros.s](macros.s)**: Define macros utilizadas en los archivos de ensamblador para simplificar el código y mejorar la legibilidad.
+* **[rectangle.s](rectangle.s)**: Implementa la lógica para dibujar rectángulos en el buffer gráfico.
+* **[start.s](start.s)**: Este archivo realiza la inicialización del hardware.
+* **[triangle.s](triangle.s)**: Implementa la lógica para dibujar triángulos en el buffer gráfico.
+* **[utils.s](utils.s)**: Contiene funciones utilitarias esenciales para el dibujado de píxeles y el cálculo de sus direcciones de memoria.
+* **[Makefile](Makefile)**: Archivo que describe cómo construir el software (qué ensamblador utilizar, qué salida generar, etc).
+* **[memmap](memmap)**: Este archivo contiene la descripción de la distribución de la memoria del programa y dónde colocar cada sección.
 * **[delay.s](delay.s)**: Proporciona funciones para introducir retardos en el programa.
 * **[eyes.s](eyes.s)**: Contiene los datos y la lógica para dibujar unos ojos animados.
 
@@ -124,3 +124,9 @@ docker run -it --rm -v $(pwd):/local --privileged -e "DISPLAY=${DISPLAY:-:0.0}" 
 # Correr un shell en el container
 docker exec -it rpi-qemu /bin/bash
 ```
+
+### README
+
+Este proyecto contiene varios archivos ensamblador ARM64 que permiten la manipulación directa de un buffer gráfico para dibujar formas básicas. A continuación, se proporciona un resumen de lo que contiene cada archivo:
+
+
