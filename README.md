@@ -8,14 +8,15 @@
 
 ## Integrantes
 
-Beretta, José María
-Patrón, Carlos Antonio 
-Yorbandi, Selien Xavier 
+* Beretta, José María  
+* Patrón, Carlos Antonio   
+* Yorbandi, Selien Xavier   
 
 ## Aclaración
 
 La velocidad de la animación depende de la capacidad de la computadora
 No se ve igual en los procesadores de los tres integrantes.
+  
 Si notan muy lenta la animación, pueden eliminar un delay en la línea 270-274 Castle.s
 
 ## Estructura
