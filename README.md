@@ -3,6 +3,8 @@
 
 Spanish version: [README_ES.md](README_ES.md)
 
+More info (Spanish): 📄 [Read more](./ejercicio1/README.md)
+
 ## Overview
 
 This project implements a framebuffer-based graphics and animation system entirely in ARM64 Assembly.
